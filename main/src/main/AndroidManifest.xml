@@ -3,9 +3,11 @@
     package="com.scy.main">
 
     <application android:theme="@style/AppTheme">
+        <activity android:name=".mvp.ui.activity.TaskListActivity"></activity>
         <activity android:name=".mvp.ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

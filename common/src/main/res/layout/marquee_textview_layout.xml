@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.scy.common.widget.MarqueeTextView
+        android:id="@+id/common_mt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="这里是轮播消息提示"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        app:scroll_first_delay="0"
+        app:scroll_interval="2000"
+        app:scroll_mode="mode_forever"/>
+
+</LinearLayout>

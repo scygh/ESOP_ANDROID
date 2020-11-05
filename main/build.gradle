@@ -5,7 +5,6 @@ if (isModule.toBoolean()) {
 }
 
 
-
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion localBuildToolsVersion

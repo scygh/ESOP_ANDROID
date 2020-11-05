@@ -45,4 +45,5 @@ dependencies {
     api 'com.uber.autodispose2:autodispose-android:2.0.0'
     api 'com.uber.autodispose2:autodispose-lifecycle:2.0.0'
     api 'com.uber.autodispose2:autodispose-androidx-lifecycle:2.0.0'
+    api 'com.google.android.material:material:1.2.1'
 }

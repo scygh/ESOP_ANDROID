@@ -4,13 +4,152 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#eee"
     android:orientation="vertical"
     tools:context=".mvp.ui.activity.MainActivity">
 
-    <Button
-        android:id="@+id/getConfig"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="getConfig"
-        />
+        android:background="#fff"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/main_logo"
+            android:gravity="center"
+            android:text="公司logo名称"
+            android:textSize="40dp" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="站点ID"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="站点ID"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/main_taskNumber"
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:text="任务单号"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/main_productionName"
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="50dp"
+                    android:text="产品名称"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/main_taskCount"
+                    android:layout_width="400dp"
+                    android:layout_height="100dp"
+                    android:text="任务数量"
+                    android:textSize="40dp" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="140dp"
+                android:paddingTop="170dp"
+                android:paddingRight="140dp"
+                android:paddingBottom="170dp">
+
+                <Button
+                    android:id="@+id/main_production"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:text="生产"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/main_SOP"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="top|right"
+                    android:text="SOP"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/main_setting"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom|left"
+                    android:text="设置"
+                    android:textSize="40dp" />
+
+                <Button
+                    android:id="@+id/main_fileManager"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="bottom|right"
+                    android:text="文件管理"
+                    android:textSize="40dp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:text="消息滚动条"
+            android:textColor="#fff"
+            android:textSize="50dp" />
+    </FrameLayout>
+
+
 </LinearLayout>
