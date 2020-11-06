@@ -9,6 +9,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
 import com.scy.common.arouter.ARouterConstants;
 import com.scy.common.base.BaseMVPActivity;
 import com.scy.common.entity.BaseResponse;
+import com.scy.common.widget.MarqueeTextView;
 import com.scy.main.R;
 import com.scy.main.mvp.contract.MainContract;
 import com.scy.main.mvp.presenter.MainPresent;
@@ -22,6 +23,7 @@ public class MainActivity extends BaseMVPActivity<MainPresent> implements MainCo
     Button btnSOP;
     Button btnSetting;
     Button btnProduction;
+    MarqueeTextView marqueeTextView;
 
     @Override
     public int getLayoutId() {
@@ -43,6 +45,8 @@ public class MainActivity extends BaseMVPActivity<MainPresent> implements MainCo
         btnSOP.setOnClickListener(this);
         btnProduction.setOnClickListener(this);
         btnSetting.setOnClickListener(this);
+        marqueeTextView = findViewById(R.id.common_mt);
+        marqueeTextView.startScroll();
     }
 
     @Override
@@ -82,5 +86,11 @@ public class MainActivity extends BaseMVPActivity<MainPresent> implements MainCo
     @Override
     public void onError(Throwable throwable) {
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        marqueeTextView.stopScroll();
     }
 }

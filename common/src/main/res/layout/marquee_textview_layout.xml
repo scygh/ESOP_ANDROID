@@ -7,13 +7,15 @@
     <com.scy.common.widget.MarqueeTextView
         android:id="@+id/common_mt"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/banner_button_bg"
+        android:gravity="center_vertical"
         android:padding="10dp"
-        android:text="这里是轮播消息提示"
+        android:text="这里是轮播消息提示,这里是轮播消息提示,这里是轮播消息提示."
         android:textColor="@color/colorWhite"
-        android:textSize="20sp"
+        android:textSize="30sp"
         app:scroll_first_delay="0"
-        app:scroll_interval="2000"
+        app:scroll_interval="5000"
         app:scroll_mode="mode_forever"/>
 
 </LinearLayout>

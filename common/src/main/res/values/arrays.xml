@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choice_array">
+        <item>全部</item>
+        <item>图片</item>
+        <item>视频</item>
+        <item>TXT文件</item>
+        <item>PDF文件</item>
+        <item>Office文件</item>
+    </string-array>
+</resources>

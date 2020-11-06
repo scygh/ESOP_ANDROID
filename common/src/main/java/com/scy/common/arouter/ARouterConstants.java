@@ -12,7 +12,7 @@ public final class ARouterConstants {
     public static final String ACTIVITY_URL_MAIN_MAINACTIVITY = "/main/MainActivity";
     public static final String ACTIVITY_URL_FILEMANAGER_FILEMANAGERACTIVITY = "/filemanager/FileManagerActivity";
     public static final String ACTIVITY_URL_MYSOP_SOPACTIVITY = "/mysop/SOPActivity";
-    public static final String ACTIVITY_URL_PRODUCTION_PRODUCTIONACTIVITY = "/production/ProductionActivity";
-    public static final String ACTIVITY_URL_SETTING_SETTINGACTIVITY = "/setting/SettingActivity";
+    public static final String ACTIVITY_URL_PRODUCTION_PRODUCTIONACTIVITY = "/productionmodule/ProductionActivity";
+    public static final String ACTIVITY_URL_SETTING_SETTINGACTIVITY = "/setmodule/SettingActivity";
 
 }
